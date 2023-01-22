@@ -19,6 +19,9 @@ header {
   justify-content: space-between;
 
   padding: 48px;
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
 }
 
 button {
@@ -36,12 +39,14 @@ button {
   font-weight: 600;
   font-size: 16px;
   line-height: 125%;
+  cursor: pointer;
 }
 
 #form-habits {
   display: flex;
 
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -50,6 +55,7 @@ button {
   flex-direction: column;
 
   gap: 24px;
+  
 }
 
 .habit {
@@ -73,6 +79,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  
 }
 
 .day div {
@@ -98,9 +105,18 @@ input {
   border-radius: 8px;
 
   background: #18181B;
+  cursor: pointer;
 }
 
 input:checked {
   background: #8B5CF6;
   border: 2px solid #A78BFA;
+}
+
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+
 }
